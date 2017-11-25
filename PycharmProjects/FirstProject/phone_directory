@@ -6,12 +6,12 @@ import random
 n = int(input())
 tele = {}
 for i in range(n):
-    name, num = input().strip().split(' ')
+    name, num = input().strip().split(' ')   #takes in 2 inputs separated by space and assigns them in order
     tele[name] = num
     #tele[input().strip().split(' ')] = input()
 query = input().strip()
 
-while query:
+while query:   # loop until you get the input from user.
     if query in tele:
         print(query,'=',tele[query])
     else:
