@@ -3,3 +3,19 @@ import string
 import os
 import random
 
+n = int(input())
+tele = {}
+for i in range(n):
+    name, num = input().strip().split(' ')
+    tele[name] = num
+    #tele[input().strip().split(' ')] = input()
+query = input().strip()
+
+while query:
+    if query in tele:
+        print(query,'=',tele[query])
+    else:
+        print("Not found")
+    query = input().strip()
+
+#print(tele)
